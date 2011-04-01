@@ -16,4 +16,3 @@ fi
 
 ln -s ${VIM_PATH}/vimrc ${HOME}/.vimrc
 ln -s ${VIM_PATH} ${HOME}/.vim
-
