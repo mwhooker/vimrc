@@ -1,3 +1,9 @@
 [submodule "bundle/jade"]
 	path = bundle/jade
 	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "bundle/coffee-script"]
+	path = bundle/coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
