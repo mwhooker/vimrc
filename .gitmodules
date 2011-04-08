@@ -10,3 +10,6 @@
 [submodule "bundle/color-jellybeans"]
 	path = bundle/color-jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/desertink.vim"]
+	path = bundle/desertink.vim
+	url = https://github.com/toupeira/desertink.vim.git
