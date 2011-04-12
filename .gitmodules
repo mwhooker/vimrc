@@ -13,3 +13,9 @@
 [submodule "bundle/desertink.vim"]
 	path = bundle/desertink.vim
 	url = https://github.com/toupeira/desertink.vim.git
+[submodule "bundle/irblack.vim"]
+	path = bundle/irblack.vim
+	url = https://github.com/wgibbs/vim-irblack.git
+[submodule "bundle/vividchalk.vim"]
+	path = bundle/vividchalk.vim
+	url = https://github.com/tpope/vim-vividchalk.git
