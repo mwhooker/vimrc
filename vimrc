@@ -90,11 +90,11 @@ if !has("gui_running")
 	set t_Sb=^[[4%p1%dm
 else
     set guifont=Inconsolata:h12
-    colorscheme slate
     " window position
     winpos 0 23
     set lines=98
     set columns=312
+    colorscheme solarized
 endif
 
 " The following are commented out as they cause vim to behave a lot
