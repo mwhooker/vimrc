@@ -19,3 +19,6 @@
 [submodule "bundle/vividchalk.vim"]
 	path = bundle/vividchalk.vim
 	url = https://github.com/tpope/vim-vividchalk.git
+[submodule "ext/pathogen"]
+	path = ext/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
