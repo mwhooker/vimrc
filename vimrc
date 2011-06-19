@@ -148,8 +148,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " tab navigation
-nnoremap <C-left> :tabprevious<CR>
-nnoremap <C-right> :tabNext<cr>
+nnoremap <C-H> :tabprevious<CR>
+nnoremap <C-L> :tabNext<cr>
 
 " scratch
 nnoremap <leader><tab> :Sscratch<CR>
