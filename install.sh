@@ -16,3 +16,9 @@ fi
 
 ln -s ${VIM_PATH}/vimrc ${HOME}/.vimrc
 ln -s ${VIM_PATH} ${HOME}/.vim
+
+git submodule update --init
+
+cd ${VIM_PATH}/bundle/command-t/ruby/command-t
+ruby extconf.rb
+make
