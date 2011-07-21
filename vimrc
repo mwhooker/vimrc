@@ -166,3 +166,5 @@ nnoremap <leader><space> :noh<cr>
 " use tab to go to matching bracket pairs
 nnoremap <tab> %
 vnoremap <tab> %
+
+nnoremap <leader><BS> mz:%s/\s\+$//<CR>`z
