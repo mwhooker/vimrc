@@ -147,9 +147,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" tab navigation
-nnoremap <C-H> :tabprevious<CR>
-nnoremap <C-L> :tabNext<cr>
+" tab navigation. not case sensitive, breaks redraw
+" nnoremap <C-H> :tabPrevious<CR>
+" nnoremap <C-L> :tabNext<cr>
 
 " scratch
 nnoremap <leader><tab> :Sscratch<CR>
