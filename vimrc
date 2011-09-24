@@ -30,6 +30,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set gdefault        " regex /g by default
+set number
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -115,6 +116,7 @@ set background=dark
 filetype indent on
 set wildignore=*.o,*.obj,*.bak,*.exe
 
+set statusline="set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
 set tags=~/.vim/tags/tv_tags,./tags
 map <F6> :b#<CR>
 
