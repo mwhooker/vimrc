@@ -37,3 +37,6 @@
 [submodule "bundle/monokai"]
 	path = bundle/monokai
 	url = https://github.com/sickill/vim-monokai.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/kevinw/pyflakes-vim.git
