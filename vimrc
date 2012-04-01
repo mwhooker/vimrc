@@ -85,20 +85,6 @@ else
 
 endif " has("autocmd")
 
-if !has("gui_running")
-	set t_Co=8
-	set t_Sf=^[[3%p1%dm
-	set t_Sb=^[[4%p1%dm
-    colorscheme Monokai
-else
-    set guifont=Inconsolata:h12
-    " window position
-    winpos 0 23
-    set lines=98
-    set columns=312
-    colorscheme solarized
-endif
-
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 set showcmd     " Show (partial) command in status line.
@@ -169,3 +155,17 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 nnoremap <leader><BS> mz:%s/\s\+$//<CR>`z
+
+if !has("gui_running")
+	set t_Co=8
+	set t_Sf=^[[3%p1%dm
+	set t_Sb=^[[4%p1%dm
+    colorscheme desertink
+else
+    set guifont=Inconsolata:h12
+    " window position
+    winpos 0 23
+    set lines=98
+    set columns=312
+    colorscheme solarized
+endif
