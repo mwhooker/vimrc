@@ -40,3 +40,6 @@
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "bundle/desertink"]
+	path = bundle/desertink
+	url = https://github.com/toupeira/vim-desertink.git
