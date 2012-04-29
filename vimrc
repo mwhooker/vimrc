@@ -31,6 +31,9 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set gdefault        " regex /g by default
 set number
+set scrolloff=3
+set wildmode=list:longest
+set title
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -155,6 +158,9 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 nnoremap <leader><BS> mz:%s/\s\+$//<CR>`z
+
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 if !has("gui_running")
 	set t_Co=8
