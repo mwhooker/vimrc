@@ -162,6 +162,17 @@ nnoremap <leader><BS> mz:%s/\s\+$//<CR>`z
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
+" Taglist plugin mapping
+noremap <silent> <Leader>T :TlistToggle<CR>
+
+" Taglist plugin config
+let Tlist_Use_Right_Window = 1
+let Tlist_Inc_Winwidth = 0
+let Tlist_WinWidth = 45
+let Tlist_GainFocus_On_ToggleOpen= 1
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Show_One_File = 1
+
 if !has("gui_running")
 	set t_Co=8
 	set t_Sf=^[[3%p1%dm
