@@ -25,9 +25,6 @@
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git
-[submodule "bundle/hammer"]
-	path = bundle/hammer
-	url = https://github.com/robgleeson/hammer.vim.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
