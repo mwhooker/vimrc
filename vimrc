@@ -17,7 +17,9 @@ endif
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-set modelines=0
+set modeline
+set modelines=5
+
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -135,6 +137,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+set splitbelow
+set splitright
 
 " tab navigation. not case sensitive, breaks redraw
 " nnoremap <C-H> :tabPrevious<CR>

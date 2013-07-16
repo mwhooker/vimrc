@@ -5,6 +5,14 @@
 " Revision   : $Id: scala.vim 15234 2008-05-29 21:54:59Z stepancheg $
 "        $URL: http://lampsvn.epfl.ch/svn-repos/scala/scala-tool-support/trunk/src/vim/indent/scala.vim $
 
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal textwidth=80
+setlocal smarttab
+setlocal expandtab
+setlocal ai
+
 if exists("b:did_indent")
   finish
 endif
