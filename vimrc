@@ -198,3 +198,6 @@ if has("multi_byte")
   "setglobal bomb
   set fileencodings=ucs-bom,utf-8,latin1
 endif
+
+
+" :'<,'>s/^\([a-zA-Z0-9-]\+\)\s\+A\s\+\d\+.\(\d\+\).\(\d\+\).\(\d\+\)/\4\.\3.\2                  PTR          \1.banksimple.com./
