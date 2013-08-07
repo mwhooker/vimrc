@@ -104,6 +104,7 @@ set shiftwidth=4
 set expandtab
 set background=dark
 set wildignore=*.o,*.obj,*.bak,*.exe
+"set backup
 
 set statusline="set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
 set tags=~/.vim/tags/tv_tags,./tags
