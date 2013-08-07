@@ -21,5 +21,4 @@ git submodule update --init --recursive
 
 
 cd ${VIM_PATH}/bundle/command-t/ruby/command-t
-ruby extconf.rb
-make
+ruby extconf.rb && make
