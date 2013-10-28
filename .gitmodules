@@ -55,3 +55,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/arduino"]
+	path = bundle/arduino
+	url = https://github.com/sudar/vim-arduino-syntax.git
