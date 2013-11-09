@@ -56,7 +56,7 @@ endif
 
 filetype off
 
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
