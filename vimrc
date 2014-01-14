@@ -36,6 +36,9 @@ set number
 set scrolloff=3
 set wildmode=list:longest
 set title
+set tw=79
+
+:set formatoptions+=1jn
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -198,6 +201,11 @@ if has("multi_byte")
   setglobal fileencoding=utf-8
   "setglobal bomb
   set fileencodings=ucs-bom,utf-8,latin1
+endif
+
+if $VIM_CRONTAB == "true"
+    set nobackup
+    set nowritebackup
 endif
 
 
