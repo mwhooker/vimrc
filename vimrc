@@ -38,7 +38,7 @@ set wildmode=list:longest
 set title
 set tw=79
 
-:set formatoptions+=1jn
+set formatoptions+=1n
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
