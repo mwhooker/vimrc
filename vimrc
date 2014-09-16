@@ -183,14 +183,12 @@ if !has("gui_running")
 	set t_Co=8
 	set t_Sf=^[[3%p1%dm
 	set t_Sb=^[[4%p1%dm
-    colorscheme desertink
 else
     set guifont=Inconsolata:h12
     " window position
     winpos 0 23
     set lines=98
     set columns=312
-    colorscheme solarized
 endif
 
 if has("multi_byte")
@@ -208,5 +206,6 @@ if $VIM_CRONTAB == "true"
     set nowritebackup
 endif
 
-
-" :'<,'>s/^\([a-zA-Z0-9-]\+\)\s\+A\s\+\d\+.\(\d\+\).\(\d\+\).\(\d\+\)/\4\.\3.\2                  PTR          \1.banksimple.com./
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
