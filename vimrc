@@ -59,7 +59,7 @@ endif
 
 filetype off
 
-call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
