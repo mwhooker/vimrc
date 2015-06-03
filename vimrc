@@ -144,6 +144,9 @@ nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
 
+" go to end of line and add closing paren
+nnoremap <leader>) $a)<ESC>
+
 " tab navigation. not case sensitive, breaks redraw
 " nnoremap <C-H> :tabPrevious<CR>
 " nnoremap <C-L> :tabNext<cr>
