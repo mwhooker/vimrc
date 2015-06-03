@@ -44,3 +44,5 @@ cli
 VersionOptions
 or
 passthru
+CoreOS
+json
