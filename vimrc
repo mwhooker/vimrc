@@ -161,6 +161,10 @@ nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
 
+" git grep
+nnoremap <leader>g :!git grep <C-r><C-w><CR>
+nnoremap <leader>G :!git grep -i <C-r><C-w><CR>
+
 " go to end of line and add closing paren
 nnoremap <leader>) $a)<ESC>
 
