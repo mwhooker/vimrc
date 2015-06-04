@@ -121,7 +121,7 @@ autocmd FileType php nnoremap <C-L> :!/usr/bin/php -l %<CR>
 
 "inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 autocmd FileType php nnoremap <C-P> :call PhpDocSingle()<CR>
-autocmd FileType php vnoremap <C-P> :call PhpDocRange()<CR> 
+autocmd FileType php vnoremap <C-P> :call PhpDocRange()<CR>
 
 "sessions
 au VimLeave * exe 'if exists("g:cmd") && g:cmd == "gvims" | if strlen(v:this_session) | exe "wviminfo! " . v:this_session . ".viminfo" | else | exe "wviminfo! " . "~/.vim/session/" . g:myfilename . ".session.viminfo" | endif | endif '
@@ -134,6 +134,23 @@ if &term =~ "xterm\\|rxvt"
     let &t_EI = "\033]12;red\007"
     autocmd VimLeave * :!echo -ne "\033]12;red\007"
 endif
+
+let mapleader = "\<Space>"
+
+" Copy & paste to system clipboard with <Space>p and <Space>y
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" region expanding
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+" Stop that stupid window from popping up
+map q: :q
 
 " window splitting
 nnoremap <leader>w <C-w>v<C-w>l
