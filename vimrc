@@ -161,6 +161,8 @@ nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
 
+" better find 
+nnoremap <leader>f /<C-r><C-w><CR>
 " git grep
 nnoremap <leader>g :!git grep <C-r><C-w><CR>
 nnoremap <leader>G :!git grep -i <C-r><C-w><CR>
