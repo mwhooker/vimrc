@@ -44,6 +44,11 @@ endif
 filetype off
 
 call pathogen#infect('bundle/{}')
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -74,6 +79,7 @@ if has("autocmd")
 else
 
   set autoindent		" always set autoindenting on
+  echoerr "No autocmd support. you may have errors"
 
 endif " has("autocmd")
 

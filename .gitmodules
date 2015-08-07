@@ -64,3 +64,6 @@
 [submodule "bundle/expand-region"]
 	path = bundle/expand-region
 	url = git@github.com:terryma/vim-expand-region.git
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
