@@ -222,6 +222,22 @@ if $VIM_CRONTAB == "true"
     set nowritebackup
 endif
 
+function GitGrepTile(search)
+    let files = split(system("git grep -l \"" . a:search . "\""))
+    let l:fsize = len(files)
+    if l:fsize > 10
+        echom "refusing to split, too many files found: " . l:fsize
+        return
+    endif
+    if v:shell_error > 0
+        echom "no files found"
+        return
+    endif
+    for f in files
+        exe ":vsp " . f
+    endfor
+endfunction
+
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
