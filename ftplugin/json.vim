@@ -1,1 +1,1 @@
-set equalprg=python\ -mjson.tool
+setlocal equalprg=python\ -mjson.tool
