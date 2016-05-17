@@ -17,6 +17,7 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set gdefault        " regex /g by default
 set number
+set relativenumber
 set scrolloff=3
 set wildmode=list:longest
 set title
@@ -151,6 +152,10 @@ nnoremap <C-l> <C-w>l
 set splitbelow
 set splitright
 
+" j/k work with wrapped lines
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
 " better find 
 nnoremap <leader>f /<C-r><C-w><CR>
 " git grep
@@ -188,6 +193,10 @@ nnoremap <C-y> 3<C-y>
 " Taglist plugin mapping
 noremap <silent> <Leader>T :TlistToggle<CR>
 
+" replace word with yank buffer
+nnoremap s "_dwP
+nnoremap S "_dWP
+
 " Taglist plugin config
 let Tlist_Use_Right_Window = 1
 let Tlist_Inc_Winwidth = 0
@@ -221,6 +230,10 @@ if $VIM_CRONTAB == "true"
     set nobackup
     set nowritebackup
 endif
+
+function DiffOriginal()
+    exe "w !diff % -"
+endfunction
 
 function GitGrepTile(search)
     let files = split(system("git grep -l \"" . a:search . "\""))
