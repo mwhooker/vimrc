@@ -49,6 +49,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ReplaceWithRegister'
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
