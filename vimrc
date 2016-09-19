@@ -48,6 +48,7 @@ call pathogen#infect('bundle/{}')
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'wincent/command-t'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ReplaceWithRegister'
 call vundle#end()
