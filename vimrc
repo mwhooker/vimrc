@@ -51,6 +51,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'wincent/command-t'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ReplaceWithRegister'
+Plugin 'rizzatti/dash.vim'
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
