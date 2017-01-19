@@ -55,9 +55,6 @@
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/sudar/vim-arduino-syntax.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/expand-region"]
 	path = bundle/expand-region
 	url = git@github.com:terryma/vim-expand-region.git
