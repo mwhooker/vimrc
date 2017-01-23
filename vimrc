@@ -108,6 +108,8 @@ set wildignore=*.o,*.obj,*.bak,*.exe
 
 set statusline="set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
 set tags=~/.vim/tags/tv_tags,./tags
+let g:vim_markdown_new_list_item_indent = 0
+
 map <F6> :b#<CR>
 
 " run file with PHP CLI (CTRL-M)
