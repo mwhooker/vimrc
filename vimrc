@@ -53,6 +53,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'ReplaceWithRegister'
 Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
