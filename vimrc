@@ -260,5 +260,6 @@ function GitGrepTile(search)
 endfunction
 
 let g:solarized_termcolors=256
+let g:go_fmt_command = "goimports"
 set background=dark
 colorscheme solarized
