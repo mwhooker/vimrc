@@ -55,6 +55,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-scripts/Conque-GDB'
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
@@ -135,6 +136,7 @@ if &term =~ "xterm\\|rxvt"
 endif
 
 let mapleader = "\<Space>"
+let g:ConqueGdb_Leader = "\\"
 
 " Copy & paste to system clipboard with <Space>p and <Space>y
 vmap <Leader>y "+y
