@@ -175,6 +175,9 @@ nnoremap <leader>G :!git grep -i <C-r><C-w><CR>
 " go to end of line and add closing paren
 nnoremap <leader>) $a)<ESC>
 
+" edit in current directory
+cnoremap <C-e> <C-R>=expand("%:p:h") . "/" <CR>
+
 " tab navigation. not case sensitive, breaks redraw
 " nnoremap <C-H> :tabPrevious<CR>
 " nnoremap <C-L> :tabNext<cr>
