@@ -43,20 +43,75 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
 
-call pathogen#infect('bundle/{}')
+
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+"
+" Colorschemes
+"
+
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'wgibbs/vim-irblack'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'sickill/vim-monokai'
+Plugin 'toupeira/vim-desertink'
+Plugin 'molokai'
+
+
+"
+" Searching
+"
+Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
 Plugin 'wincent/command-t'
+
+"
+" General Editing
+"
+"
+
+Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-expand-region'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ReplaceWithRegister'
-Plugin 'rizzatti/dash.vim'
-Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'vim-scripts/Conque-GDB'
 Plugin 'chrisbra/unicode.vim'
+Plugin 'sjl/gundo.vim'
+
+"
+" Window Management
+"
+Plugin 'ZoomWin'
+
+"
+" Languages
+"
+
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-scripts/VimClojure'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'elzr/vim-json'
+Plugin 'sudar/vim-arduino-syntax'
+Plugin 'fatih/vim-go'
+Plugin 'digitaltoad/vim-jade'
+
+"
+" Development Tool Integration
+"
+"
+
+Plugin 'rizzatti/dash.vim'
+Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/Conque-GDB'
+
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
