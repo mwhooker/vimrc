@@ -17,4 +17,7 @@ fi
 ln -s ${VIM_PATH}/vimrc ${HOME}/.vimrc
 ln -s ${VIM_PATH} ${HOME}/.vim
 
-git submodule update --init --recursive
+git submodule init --update
+vim +PluginInstall +qall
+cd ${VIM_PATH}/bundle/YouCompleteMe
+./install.py --gocode-completer --clang-completer --tern-completer
