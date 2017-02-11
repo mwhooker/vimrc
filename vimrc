@@ -56,6 +56,7 @@ Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-scripts/Conque-GDB'
+Plugin 'chrisbra/unicode.vim'
 call vundle#end()
 
 " Only do this part when compiled with support for autocommands.
