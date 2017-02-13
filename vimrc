@@ -9,12 +9,12 @@ set modelines=5
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup        " do not keep a backup file, use versions instead
 endif
-set history=500		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=500        " keep 50 lines of command line history
+set ruler        " show the cursor position all the time
+set showcmd        " display incomplete commands
+set incsearch        " do incremental searching
 set gdefault        " regex /g by default
 set number
 set relativenumber
@@ -22,6 +22,8 @@ set scrolloff=3
 set wildmode=list:longest
 set title
 set tw=79
+set laststatus=2
+set t_Co=16
 
 set formatoptions+=1n
 
@@ -30,6 +32,7 @@ set formatoptions+=1n
 
 " Don't use Ex mode, use Q for formatting
 map Q gqip
+
 
 " This is an alternative that also works in block mode, but the deleted
 " text is lost and it only works for putting the current register.
@@ -59,7 +62,6 @@ Plugin 'VundleVim/Vundle.vim'
 "
 " Colorschemes
 "
-
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'wgibbs/vim-irblack'
@@ -80,7 +82,6 @@ Plugin 'wincent/command-t'
 " General Editing
 "
 "
-
 Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-expand-region'
 Plugin 'Valloric/YouCompleteMe'
@@ -91,14 +92,8 @@ Plugin 'chrisbra/unicode.vim'
 Plugin 'sjl/gundo.vim'
 
 "
-" Window Management
-"
-Plugin 'ZoomWin'
-
-"
 " Languages
 "
-
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/VimClojure'
@@ -112,11 +107,17 @@ Plugin 'digitaltoad/vim-jade'
 " Development Tool Integration
 "
 "
-
 Plugin 'rizzatti/dash.vim'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/Conque-GDB'
+"
+" Other
+"
+Plugin 'ZoomWin'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 
 call vundle#end()
 
@@ -148,7 +149,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent        " always set autoindenting on
   echoerr "No autocmd support. you may have errors"
 
 endif " has("autocmd")
@@ -165,13 +166,10 @@ set hidden          " Hide buffers when they are abandoned
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set background=dark
 set wildignore=*.o,*.obj,*.bak,*.exe
 "set backup
 
-set statusline="set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
 set tags=~/.vim/tags/tv_tags,./tags
-let g:vim_markdown_new_list_item_indent = 0
 
 map <F6> :b#<CR>
 
@@ -199,6 +197,12 @@ endif
 
 let mapleader = "\<Space>"
 let g:ConqueGdb_Leader = "\\"
+let g:go_fmt_command = "goimports"
+let g:vim_markdown_new_list_item_indent = 0
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
 " Copy & paste to system clipboard with <Space>p and <Space>y
 vmap <Leader>y "+y
@@ -228,7 +232,7 @@ set splitright
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-" better find 
+" better find
 nnoremap <leader>f /<C-r><C-w><CR>
 " git grep
 nnoremap <leader>g :!git grep <C-r><C-w><CR>
@@ -280,9 +284,8 @@ let Tlist_GainFocus_On_ToggleOpen= 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 if !has("gui_running")
-	set t_Co=8
-	set t_Sf=^[[3%p1%dm
-	set t_Sb=^[[4%p1%dm
+    set t_Sf=^[[3%p1%dm
+    set t_Sb=^[[4%p1%dm
 else
     set guifont=Inconsolata:h12
     " window position
@@ -326,7 +329,5 @@ function GitGrepTile(search)
     endfor
 endfunction
 
-let g:solarized_termcolors=256
-let g:go_fmt_command = "goimports"
 set background=dark
 colorscheme solarized
