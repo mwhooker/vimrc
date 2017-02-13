@@ -42,6 +42,12 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+    let undodir="$HOME/.vim/undo"
+    set undofile
+endif
+
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
