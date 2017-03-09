@@ -117,6 +117,7 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'ZoomWin'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'romainl/vim-qf'
 
 
 call vundle#end()
