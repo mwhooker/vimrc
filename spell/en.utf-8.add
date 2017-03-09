@@ -50,3 +50,13 @@ blog
 app
 microservice
 kubernetes
+fmt
+io
+ioutil
+filepath
+hashicorp
+uuid
+mitchellh
+panicwrap
+prefixedio
+GenerateUUID

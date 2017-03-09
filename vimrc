@@ -330,5 +330,6 @@ function GitGrepTile(search)
     endfor
 endfunction
 
-set background=dark
+setlocal spell spelllang=en_us
 colorscheme solarized
+highlight SpellBad     ctermfg=darkred
