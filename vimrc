@@ -297,6 +297,7 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories=["vim-snippets/snippets", "UltiSnips"]
+let g:UltiSnipsEditSplit="context"
 
 
 if !has("gui_running")
