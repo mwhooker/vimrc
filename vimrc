@@ -90,6 +90,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'sjl/gundo.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 "
 " Languages
@@ -283,6 +285,19 @@ let Tlist_Inc_Winwidth = 0
 let Tlist_WinWidth = 45
 let Tlist_GainFocus_On_ToggleOpen= 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+" utilisnips
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:UltiSnipsSnippetDirectories=["vim-snippets/snippets", "UltiSnips"]
+
 
 if !has("gui_running")
     set t_Sf=^[[3%p1%dm
