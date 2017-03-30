@@ -1,0 +1,6 @@
+# error inline
+snippet erri "Error check inline" !b
+if err := ${0:${VISUAL}}; err != nil {
+	${1:return err}
+}
+endsnippet
