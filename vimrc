@@ -92,6 +92,7 @@ Plugin 'chrisbra/unicode.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'dhruvasagar/vim-table-mode'
 
 "
 " Languages
@@ -206,6 +207,10 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+" markdown
+let g:vim_markdown_json_frontmatter = 1
+set conceallevel=2
 
 " Copy & paste to system clipboard with <Space>p and <Space>y
 vmap <Leader>y "+y
