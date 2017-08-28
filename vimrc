@@ -87,7 +87,6 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ReplaceWithRegister'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'SirVer/ultisnips'
@@ -105,6 +104,8 @@ Plugin 'elzr/vim-json'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 "
 " Development Tool Integration
@@ -117,7 +118,6 @@ Plugin 'vim-scripts/Conque-GDB'
 "
 " Other
 "
-Plugin 'ZoomWin'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'romainl/vim-qf'
