@@ -168,3 +168,5 @@ ACLRole
 ACL
 crc32
 resumable
+Repeatability
+hypervisors
