@@ -353,6 +353,8 @@ function GitGrepTile(search)
     endfor
 endfunction
 
+let g:qf_loclist_window_bottom = 0
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -360,8 +362,12 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+" doesn't work: let g:syntastic_reuse_loc_lists = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['go', 'govet']
+" Close syntastic window
+nnoremap <leader>x :SyntasticReset<CR>
+
 
 setlocal spell spelllang=en_us
 colorscheme solarized
