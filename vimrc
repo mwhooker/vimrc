@@ -368,6 +368,9 @@ let g:syntastic_go_checkers = ['go', 'govet']
 " Close syntastic window
 nnoremap <leader>x :SyntasticReset<CR>
 
+" pandoc
+let g:pandoc#modules#disabled = ["folding", "chdir"]
+
 
 setlocal spell spelllang=en_us
 colorscheme solarized
