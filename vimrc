@@ -108,6 +108,8 @@ Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'fatih/vim-hclfmt'
+Plugin 'jasontbradshaw/pigeon.vim'
 
 "
 " Development Tool Integration
@@ -370,6 +372,9 @@ nnoremap <leader>x :SyntasticReset<CR>
 
 " pandoc
 let g:pandoc#modules#disabled = ["folding", "chdir"]
+let g:pandoc#formatting#textwidth = 79
+let g:pandoc#formatting#equalprg = "pandoc -t markdown --columns=79"
+let g:pandoc#formatting#extra_equalprg = ""
 
 
 setlocal spell spelllang=en_us
