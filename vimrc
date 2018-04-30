@@ -225,12 +225,14 @@ let g:vim_markdown_json_frontmatter = 1
 set conceallevel=2
 
 " Copy & paste to system clipboard with <Space>p and <Space>y
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
+vnoremap <Leader>d "+d
+nnoremap <Leader>d "+d
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
+nnoremap <Leader>y "+y
+vnoremap <Leader>y "+y
 
 " region expanding
 vmap v <Plug>(expand_region_expand)
