@@ -292,9 +292,11 @@ nnoremap S "_dWP
 " Taglist plugin config
 let Tlist_Use_Right_Window = 1
 let Tlist_Inc_Winwidth = 0
-let Tlist_WinWidth = 45
+let Tlist_WinWidth = 65
 let Tlist_GainFocus_On_ToggleOpen= 1
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+" go language
+let s:tlist_def_go_settings = 'go;g:enum;s:struct;u:union;t:type;' .
+                           \ 'v:variable;f:function'
 
 " utilisnips
 " make YCM compatible with UltiSnips (using supertab)
