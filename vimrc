@@ -70,13 +70,11 @@ Plugin 'toupeira/vim-desertink'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'wgibbs/vim-irblack'
 
-
 "
 " Searching
 "
 Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
-Plugin 'wincent/command-t'
 
 "
 " General Editing
@@ -134,8 +132,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'romainl/vim-qf'
 
-
 call vundle#end()
+set rtp+=/usr/local/opt/fzf
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -294,6 +292,8 @@ nnoremap <C-y> 3<C-y>
 " replace word with yank buffer
 nnoremap s "_dwP
 nnoremap S "_dWP
+
+nnoremap <leader>t :FZF<cr>
 
 " utilisnips
 " make YCM compatible with UltiSnips (using supertab)
