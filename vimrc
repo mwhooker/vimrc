@@ -63,12 +63,12 @@ Plugin 'VundleVim/Vundle.vim'
 " Colorschemes
 "
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'molokai'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'wgibbs/vim-irblack'
-Plugin 'tpope/vim-vividchalk'
 Plugin 'sickill/vim-monokai'
 Plugin 'toupeira/vim-desertink'
-Plugin 'molokai'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'wgibbs/vim-irblack'
 
 
 "
@@ -82,37 +82,42 @@ Plugin 'wincent/command-t'
 " General Editing
 "
 "
-Plugin 'mattn/emmet-vim'
-Plugin 'terryma/vim-expand-region'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ReplaceWithRegister'
-Plugin 'godlygeek/tabular'
 Plugin 'chrisbra/unicode.vim'
-Plugin 'sjl/gundo.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'vim-scripts/Mark--Karkat'
-Plugin 'kshenoy/vim-signature'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/ZoomWin'
+Plugin 'godlygeek/tabular'
+Plugin 'honza/vim-snippets'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'kshenoy/vim-signature'
+Plugin 'mattn/emmet-vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ReplaceWithRegister'
+Plugin 'SirVer/ultisnips'
+Plugin 'sjl/gundo.vim'
+Plugin 'terryma/vim-expand-region'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/Mark--Karkat'
+Plugin 'vim-scripts/ZoomWin'
+" Whitespace editing in case <leader><del> stops working
+" Plugin 'ntpeters/vim-better-whitespace'
+" Plugin 'bronson/vim-trailing-whitespace'
 
 "
 " Languages
 "
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'vim-scripts/VimClojure'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'elzr/vim-json'
-Plugin 'sudar/vim-arduino-syntax'
-Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'elzr/vim-json'
+Plugin 'fatih/vim-go'
 Plugin 'fatih/vim-hclfmt'
 Plugin 'jasontbradshaw/pigeon.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'sudar/vim-arduino-syntax'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/VimClojure'
+Plugin 'vim-syntastic/syntastic'
 
 "
 " Development Tool Integration
