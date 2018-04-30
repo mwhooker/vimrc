@@ -282,21 +282,9 @@ nnoremap <leader><BS> mz:%s/\s\+$//<CR>`z
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" Taglist plugin mapping
-noremap <silent> <Leader>T :TlistToggle<CR>
-
 " replace word with yank buffer
 nnoremap s "_dwP
 nnoremap S "_dWP
-
-" Taglist plugin config
-let Tlist_Use_Right_Window = 1
-let Tlist_Inc_Winwidth = 0
-let Tlist_WinWidth = 65
-let Tlist_GainFocus_On_ToggleOpen= 1
-" go language
-let s:tlist_def_go_settings = 'go;g:enum;s:struct;u:union;t:type;' .
-                           \ 'v:variable;f:function'
 
 " utilisnips
 " make YCM compatible with UltiSnips (using supertab)
