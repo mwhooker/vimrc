@@ -95,6 +95,8 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'kien/rainbow_parentheses.vim'
 
 "
 " Languages
