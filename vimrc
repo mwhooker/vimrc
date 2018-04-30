@@ -94,6 +94,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'kshenoy/vim-signature'
+Plugin 'tpope/vim-surround'
 
 "
 " Languages
