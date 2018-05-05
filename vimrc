@@ -124,6 +124,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'rizzatti/dash.vim'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'vim-scripts/Conque-GDB'
 "
 " Other
@@ -357,6 +358,7 @@ endfunction
 
 let g:qf_loclist_window_bottom = 0
 
+" syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
