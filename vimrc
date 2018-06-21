@@ -115,7 +115,7 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/VimClojure'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 "
 " Development Tool Integration
@@ -357,20 +357,6 @@ function GitGrepTile(search)
 endfunction
 
 let g:qf_loclist_window_bottom = 0
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-" doesn't work: let g:syntastic_reuse_loc_lists = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_go_checkers = ['go', 'govet']
-" Close syntastic window
-nnoremap <leader>x :SyntasticReset<CR>
 
 " pandoc
 let g:pandoc#modules#disabled = ["folding", "chdir"]
