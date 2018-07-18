@@ -96,6 +96,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'vim-scripts/ZoomWin'
+Plugin 'mtth/scratch.vim'
 " Whitespace editing in case <leader><del> stops working
 " Plugin 'ntpeters/vim-better-whitespace'
 " Plugin 'bronson/vim-trailing-whitespace'
