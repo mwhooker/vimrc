@@ -74,7 +74,6 @@ Plugin 'wgibbs/vim-irblack'
 " Searching
 "
 Plugin 'mileszs/ack.vim'
-Plugin 'rking/ag.vim'
 
 "
 " General Editing
@@ -96,7 +95,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'vim-scripts/ZoomWin'
-Plugin 'mtth/scratch.vim'
 " Whitespace editing in case <leader><del> stops working
 " Plugin 'ntpeters/vim-better-whitespace'
 " Plugin 'bronson/vim-trailing-whitespace'
@@ -108,6 +106,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
 Plugin 'fatih/vim-go'
 Plugin 'fatih/vim-hclfmt'
+Plugin 'fatih/gomodifytags'
 Plugin 'jasontbradshaw/pigeon.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'sudar/vim-arduino-syntax'
@@ -268,9 +267,6 @@ cnoremap <C-e> <C-R>=expand("%:p:h") . "/" <CR>
 " tab navigation. not case sensitive, breaks redraw
 " nnoremap <C-H> :tabPrevious<CR>
 " nnoremap <C-L> :tabNext<cr>
-
-" scratch
-nnoremap <leader><tab> :Sscratch<CR>
 
 " escape to normal mode
 inoremap jj <ESC>
