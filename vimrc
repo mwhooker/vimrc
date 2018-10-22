@@ -124,7 +124,8 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
-Plugin 'vim-scripts/Conque-GDB'
+" Conque is causing python warnings
+" Plugin 'vim-scripts/Conque-GDB'
 "
 " Other
 "
@@ -212,6 +213,7 @@ endif
 let mapleader = "\<Space>"
 let g:ConqueGdb_Leader = "\\"
 let g:go_fmt_command = "goimports"
+let g:go_gocode_propose_source=0
 let g:vim_markdown_new_list_item_indent = 0
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
