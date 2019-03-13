@@ -62,7 +62,7 @@ Plugin 'VundleVim/Vundle.vim'
 "
 " Colorschemes
 "
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized'}
 Plugin 'molokai'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'sickill/vim-monokai'
