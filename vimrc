@@ -69,6 +69,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'toupeira/vim-desertink'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'wgibbs/vim-irblack'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 "
 " Searching
