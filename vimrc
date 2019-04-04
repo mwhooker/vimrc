@@ -51,91 +51,104 @@ if has('persistent_undo')
     set undofile
 endif
 
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+let g:ale_completion_enabled = 1
 
+set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+if dein#load_state('~/.vim/bundle/dein')
+    call dein#begin('~/.vim/bundle/dein')
+
+    call dein#add('~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim')
+    call dein#add('Shougo/deoplete.nvim')
+    if !has('nvim')
+        call dein#add('roxma/nvim-yarp')
+        call dein#add('roxma/vim-hug-neovim-rpc')
+    endif
+
+    call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
 
 "
 " Colorschemes
 "
-Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized'}
-Plugin 'chriskempson/base16-vim'
-Plugin 'molokai'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'sickill/vim-monokai'
-Plugin 'toupeira/vim-desertink'
-Plugin 'tpope/vim-vividchalk'
-Plugin 'wgibbs/vim-irblack'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+    call dein#add('altercation/solarized', {'rtp': 'vim-colors-solarized'})
+    call dein#add('chriskempson/base16-vim')
+    call dein#add('vim-scripts/molokai')
+    call dein#add('nanotech/jellybeans.vim')
+    call dein#add('sickill/vim-monokai')
+    call dein#add('toupeira/vim-desertink')
+    call dein#add('tpope/vim-vividchalk')
+    call dein#add('wgibbs/vim-irblack')
+    call dein#add('chriskempson/tomorrow-theme', {'rtp': 'vim/'})
 
 "
 " Searching
 "
-Plugin 'mileszs/ack.vim'
+    call dein#add('mileszs/ack.vim')
 
 "
 " General Editing
 "
 "
-Plugin 'chrisbra/unicode.vim'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'kshenoy/vim-signature'
-Plugin 'mattn/emmet-vim'
-Plugin 'ReplaceWithRegister'
-Plugin 'SirVer/ultisnips'
-Plugin 'sjl/gundo.vim'
-Plugin 'terryma/vim-expand-region'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/Mark--Karkat'
-Plugin 'vim-scripts/ZoomWin'
+    call dein#add('chrisbra/unicode.vim')
+    call dein#add('dhruvasagar/vim-table-mode')
+    call dein#add('godlygeek/tabular')
+    call dein#add('honza/vim-snippets')
+    call dein#add('kien/rainbow_parentheses.vim')
+    call dein#add('kshenoy/vim-signature')
+    call dein#add('mattn/emmet-vim')
+    call dein#add('vim-scripts/ReplaceWithRegister')
+    call dein#add('SirVer/ultisnips')
+    call dein#add('sjl/gundo.vim')
+    call dein#add('terryma/vim-expand-region')
+    call dein#add('tpope/vim-commentary')
+    call dein#add('tpope/vim-surround')
+    call dein#add('vim-scripts/Mark--Karkat')
+    call dein#add('vim-scripts/ZoomWin')
 " Whitespace editing in case <leader><del> stops working
-" Plugin 'ntpeters/vim-better-whitespace'
-" Plugin 'bronson/vim-trailing-whitespace'
+" call dein#add('ntpeters/vim-better-whitespace')
+" call dein#add('bronson/vim-trailing-whitespace')
 
 "
 " Languages
 "
-Plugin 'digitaltoad/vim-jade'
-Plugin 'elzr/vim-json'
-Plugin 'fatih/vim-go'
-Plugin 'fatih/vim-hclfmt'
-Plugin 'fatih/gomodifytags'
-Plugin 'jasontbradshaw/pigeon.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'sudar/vim-arduino-syntax'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/VimClojure'
-Plugin 'w0rp/ale'
+    call dein#add('digitaltoad/vim-jade')
+    call dein#add('elzr/vim-json')
+    call dein#add('fatih/vim-go')
+    call dein#add('fatih/vim-hclfmt')
+    call dein#add('fatih/gomodifytags')
+    call dein#add('jasontbradshaw/pigeon.vim')
+    call dein#add('kchmck/vim-coffee-script')
+    call dein#add('sudar/vim-arduino-syntax')
+    call dein#add('vim-pandoc/vim-pandoc')
+    call dein#add('vim-pandoc/vim-pandoc-syntax')
+    call dein#add('vim-ruby/vim-ruby')
+    call dein#add('vim-scripts/VimClojure')
+    call dein#add('w0rp/ale')
 
 "
 " Development Tool Integration
 "
 "
-Plugin 'rizzatti/dash.vim'
-Plugin 'mattn/gist-vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rhubarb'
+    call dein#add('rizzatti/dash.vim')
+    call dein#add('mattn/gist-vim')
+    call dein#add('tpope/vim-fugitive')
+    call dein#add('tpope/vim-rhubarb')
 " Conque is causing python warnings
-" Plugin 'vim-scripts/Conque-GDB'
+" call dein#add('vim-scripts/Conque-GDB')
 "
 " Other
 "
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'romainl/vim-qf'
+    call dein#add('vim-airline/vim-airline')
+    call dein#add('vim-airline/vim-airline-themes')
+    call dein#add('romainl/vim-qf')
 
-call vundle#end()
+
+    call dein#end()
+    call dein#save_state()
+endif
+
+let g:deoplete#enable_at_startup = 1
+
 set rtp+=/usr/local/opt/fzf
 
 " Only do this part when compiled with support for autocommands.

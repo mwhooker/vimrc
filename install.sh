@@ -18,6 +18,5 @@ ln -s ${VIM_PATH}/vimrc ${HOME}/.vimrc
 ln -s ${VIM_PATH} ${HOME}/.vim
 
 git submodule init --update
-vim +PluginInstall +qall
-cd ${VIM_PATH}/bundle/YouCompleteMe
-./install.py --gocode-completer --clang-completer --tern-completer
+pip3 install --user pynvim
+vim "+call dein#install()"

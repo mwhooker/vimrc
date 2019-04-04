@@ -1,4 +1,4 @@
 #!/bin/bash
 
 git submodule foreach git pull origin master
-vim +PluginUpdate +qall
+vim "+call dein#update()"
