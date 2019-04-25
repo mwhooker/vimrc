@@ -147,7 +147,6 @@ if dein#load_state('~/.vim/bundle/dein')
     call dein#save_state()
 endif
 
-let g:deoplete#enable_at_startup = 1
 
 set rtp+=/usr/local/opt/fzf
 
@@ -312,12 +311,14 @@ nnoremap <leader>t :FZF<cr>
 " utilisnips
 
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsSnippetDirectories=["vim-snippets/snippets", "UltiSnips"]
 let g:UltiSnipsEditSplit="context"
+let g:UltiSnipsExpandTrigger="<tab>"
+
+call deoplete#custom#source('ultisnips', 'rank', 1000)
+call deoplete#custom#option('auto_complete_delay', 100)
+let g:deoplete#enable_at_startup = 1
 
 
 if !has("gui_running")
