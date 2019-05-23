@@ -51,7 +51,8 @@ if has('persistent_undo')
     set undofile
 endif
 
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
+let g:ale_go_langserver_executable = 'gopls'
 
 set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
