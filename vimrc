@@ -104,6 +104,7 @@ if dein#load_state('~/.vim/bundle/dein')
     call dein#add('tpope/vim-surround')
     call dein#add('vim-scripts/Mark--Karkat')
     call dein#add('vim-scripts/ZoomWin')
+    call dein#add('godlygeek/tabular')
 " Whitespace editing in case <leader><del> stops working
 " call dein#add('ntpeters/vim-better-whitespace')
 " call dein#add('bronson/vim-trailing-whitespace')
@@ -124,6 +125,7 @@ if dein#load_state('~/.vim/bundle/dein')
     call dein#add('vim-ruby/vim-ruby')
     call dein#add('vim-scripts/VimClojure')
     call dein#add('w0rp/ale')
+    call dein#add('hashivim/vim-terraform')
 
 "
 " Development Tool Integration
