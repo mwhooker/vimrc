@@ -205,6 +205,12 @@ set tags=~/.vim/tags/tv_tags,./tags
 
 map <F6> :b#<CR>
 
+" Golang
+map <leader>i :GoInfo<CR>
+let g:go_info_mode = 'gopls'
+let g:go_fmt_command = "goimports"
+let g:go_gocode_propose_source=0
+
 " run file with PHP CLI (CTRL-M)
 "autocmd FileType php nnoremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 
@@ -229,8 +235,6 @@ endif
 
 let mapleader = "\<Space>"
 let g:ConqueGdb_Leader = "\\"
-let g:go_fmt_command = "goimports"
-let g:go_gocode_propose_source=0
 let g:vim_markdown_new_list_item_indent = 0
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
