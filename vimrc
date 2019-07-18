@@ -133,6 +133,7 @@ if dein#load_state('~/.vim/bundle/dein')
 "
 "
     call dein#add('rizzatti/dash.vim')
+    call dein#add('mattn/webapi-vim')
     call dein#add('mattn/gist-vim')
     call dein#add('tpope/vim-fugitive')
     call dein#add('tpope/vim-rhubarb')
