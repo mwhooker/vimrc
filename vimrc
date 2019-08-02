@@ -53,6 +53,9 @@ endif
 
 let g:ale_completion_enabled = 0
 let g:ale_go_langserver_executable = 'gopls'
+let g:ale_linters = {
+	\ 'go': ['gopls'],
+	\}
 
 set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
@@ -209,6 +212,7 @@ map <F6> :b#<CR>
 " Golang
 map <leader>i :GoInfo<CR>
 let g:go_info_mode = 'gopls'
+let g:go_def_mode='gopls'
 let g:go_fmt_command = "goimports"
 let g:go_gocode_propose_source=0
 
