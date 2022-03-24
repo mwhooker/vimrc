@@ -4,3 +4,7 @@ if err := ${0:${VISUAL}}; err != nil {
 	${1:return err}
 }
 endsnippet
+
+snippet noerr "require no error" !b
+require.NoError(t, err)
+endsnippet

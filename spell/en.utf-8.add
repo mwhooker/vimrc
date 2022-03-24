@@ -201,3 +201,13 @@ exfiltrated
 workspaces's
 zipslip
 durations
+serializer
+filename
+tfplan
+AES128
+backend
+ttl
+Memoized
+memoized
+hostable
+Autoscale
