@@ -17,6 +17,6 @@ fi
 ln -s ${VIM_PATH}/vimrc ${HOME}/.vimrc
 ln -s ${VIM_PATH} ${HOME}/.vim
 
-git submodule init --update
-pip3 install --user pynvim
+git submodule update --init
+pip3 install --user pynvim --break-system-packages
 vim "+call dein#install()"

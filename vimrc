@@ -74,8 +74,6 @@ if dein#load_state('~/.vim/bundle/dein')
 "
 " Colorschemes
 "
-    call dein#add('altercation/solarized', {'rtp': 'vim-colors-solarized'})
-    call dein#add('chriskempson/base16-vim')
     call dein#add('vim-scripts/molokai')
     call dein#add('nanotech/jellybeans.vim')
     call dein#add('sickill/vim-monokai')
@@ -387,5 +385,4 @@ let g:pandoc#formatting#equalprg = "pandoc -t markdown --columns=79"
 let g:pandoc#formatting#extra_equalprg = ""
 
 setlocal spell spelllang=en_us
-colorscheme solarized
 highlight SpellBad     ctermfg=darkred
