@@ -74,6 +74,8 @@ if dein#load_state('~/.vim/bundle/dein')
 "
 " Colorschemes
 "
+
+    call dein#add('NLKNguyen/papercolor-theme')
     call dein#add('vim-scripts/molokai')
     call dein#add('nanotech/jellybeans.vim')
     call dein#add('sickill/vim-monokai')
@@ -151,7 +153,7 @@ if dein#load_state('~/.vim/bundle/dein')
 endif
 
 
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/bin/fzf
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -385,4 +387,5 @@ let g:pandoc#formatting#equalprg = "pandoc -t markdown --columns=79"
 let g:pandoc#formatting#extra_equalprg = ""
 
 setlocal spell spelllang=en_us
+colorscheme PaperColor
 highlight SpellBad     ctermfg=darkred
