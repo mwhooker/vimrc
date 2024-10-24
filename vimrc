@@ -153,7 +153,7 @@ if dein#load_state('~/.vim/bundle/dein')
 endif
 
 
-set rtp+=/opt/homebrew/var/homebrew/linked/fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
