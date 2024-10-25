@@ -388,4 +388,5 @@ let g:pandoc#formatting#extra_equalprg = ""
 
 setlocal spell spelllang=en_us
 colorscheme PaperColor
-highlight SpellBad     ctermfg=darkred
+" hi SpellBad cterm=underline ctermfg=red ctermbg=NONE
+" highlight SpellBad     ctermfg=darkred
